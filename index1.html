@@ -18,35 +18,43 @@
 <body>
 
     <!-- Header Section -->
-    <!-- Header Section -->
     <header class="navbar">
         <div class="container">
 
-            <!-- 1. Logo (على اليمين) -->
+            <!-- 1. Logo & Brand Name (على اليمين) -->
             <div class="logo">
                 <a href="#">
                     <img src="images/logo.png" alt="RS Coaching & Consulting Logo">
                 </a>
+                <span class="brand-title">RS Coaching & Consulting</span>
             </div>
 
-            <!-- 2. Navigation Links (بالنص) -->
-            <nav class="nav-links">
-                <a href="index1.html" class="active">الرئيسية</a>
-                <a href="#about">نحن</a> <!-- تم ربط الرابط بقسم نحن -->
+            <!-- 2. Navigation Links (بالنص للمكتب / قائمة جانبية للتلفون) -->
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="#about">نحن</a>
                 <a href="#courses">دوراتنا</a>
                 <a href="#success-stories">قصص نجاح</a>
                 <a href="#coaching">كوتشينغ</a>
                 <a href="#contact">اتصل بنا</a>
             </nav>
 
-            <!-- 3. Call to Action Button (على الشمال) -->
-            <div class="cta-btn">
-                <a href="https://wa.me/9613034085" class="btn">احجز الآن</a>
+            <!-- 3. Actions: Call to Action Button + Hamburger Icon (على الشمال) -->
+            <div class="header-actions">
+                <div class="cta-btn">
+                    <a href="https://wa.me/9613034085" class="btn">احجز الآن</a>
+                </div>
+
+                <!-- زر الشحطات للتلفون -->
+                <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
 
         </div>
     </header>
-
     <!-- ================= HERO SECTION (مضبوط 100%) ================= -->
     <section class="hero-section">
         <div class="hero-card-container">
@@ -912,6 +920,19 @@
                 behavior: 'smooth'
             });
         }
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // إغلاق القائمة تلقائياً عند الكبس على أي رابط داخلي
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
     </script>
 </body>
 
