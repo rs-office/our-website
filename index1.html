@@ -18,43 +18,52 @@
 <body>
 
     <!-- Header Section -->
-    <header class="navbar">
-        <div class="container">
-
-            <!-- 1. Logo & Brand Name (على اليمين) -->
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo.png" alt="RS Coaching & Consulting Logo">
-                </a>
-                <span class="brand-title">RS Coaching & Consulting</span>
+    <!-- HEADER احترافي وبسيط -->
+<header class="clean-header">
+    <div class="header-inner">
+        <!-- اليمين: اللوجو والاسم جنب بعض -->
+        <div class="brand-box">
+            <img src="images/logo.png" alt="RS Logo" class="brand-logo">
+            <div class="brand-text">
+                <span class="main-title">RS Coaching & Consulting</span>
             </div>
-
-            <!-- 2. Navigation Links (بالنص للمكتب / قائمة جانبية للتلفون) -->
-            <nav class="nav-links" id="navLinks">
-                <a href="index.html" class="active">الرئيسية</a>
-                <a href="#about">نحن</a>
-                <a href="#courses">دوراتنا</a>
-                <a href="#success-stories">قصص نجاح</a>
-                <a href="#coaching">كوتشينغ</a>
-                <a href="#contact">اتصل بنا</a>
-            </nav>
-
-            <!-- 3. Actions: Call to Action Button + Hamburger Icon (على الشمال) -->
-            <div class="header-actions">
-                <div class="cta-btn">
-                    <a href="https://wa.me/9613034085" class="btn">احجز الآن</a>
-                </div>
-
-                <!-- زر الشحطات للتلفون -->
-                <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-
         </div>
-    </header>
+
+        <!-- اليسار: فقط زِر الشحطات -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- القائمة الجانبية للتلفون (بتفتح لما نكبس على الشحطات) -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="#about">عن المركز</a>
+        <a href="#courses">دوراتنا</a>
+        <a href="#success-stories">قصص نجاح</a>
+        <a href="#coaching">كوتشينغ</a>
+        <a href="#contact">اتصل بنا</a>
+        <a href="https://wa.me/9613034085" class="nav-btn-whatsapp">احجز الآن</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION (القسم الأول بالموقع) -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>طريقك نحو النجاح والنمو</h1>
+        <p class="hero-subtitle">READY TO UPGRADE YOUR SKILLS?</p>
+        <p class="hero-desc">
+            المدربة الدولية د. رانيا شحاده تفتح لك أبواب التميز، التطوير والنمو لتصل إلى أقصى إمكانياتك الشخصية والمهنية.
+        </p>
+        <div class="hero-buttons">
+            <a href="https://wa.me/9613034085" class="btn-primary">احجز الآن</a>
+            <a href="#courses" class="btn-secondary">استكشف دوراتنا</a>
+        </div>
+    </div>
+</section>
     <!-- ================= HERO SECTION (مضبوط 100%) ================= -->
     <section class="hero-section">
         <div class="hero-card-container">
