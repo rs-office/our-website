@@ -929,19 +929,19 @@
                 behavior: 'smooth'
             });
         }
+        
         const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
+    const mobileNav = document.getElementById('mobileNav');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+    menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('open');
+    });
 
-        // إغلاق القائمة تلقائياً عند الكبس على أي رابط داخلي
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
         });
+    });
     </script>
 </body>
 
