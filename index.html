@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Coaching & Consulting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- بدلاً من style.css خليها هيك: -->
+    <link rel="stylesheet" href="style.css?v=2">
+    <!-- Font Awesome Professional Icons CDN -->
+</head>
+
+<body style="overflow-x: hidden; width: 100%;">
+
+    <header class="navbar">
+        <div class="container">
+            <!-- Input للتحكم بفتحة المنيو بالموبايل -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <!-- القسم الأيسر: الأيقونة واللوغو حد بعض دغري -->
+            <div class="nav-left">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <a href="#" class="logo-container">
+                    <img src="images/logo-removebg-preview.png" alt="RS Coaching & Consulting" class="logo-img">
+                </a>
+            </div>
+
+            <!-- القائمة الرئيسية (اللينكات مع الخط الموف عند الـ Hover) -->
+            <nav class="nav-menu">
+                <a href="" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a>
+                <a href="#about" class="nav-link" data-en="About Us" data-ar="عن المركز">About Us</a>
+                <a href="#courses" class="nav-link" data-en="Courses" data-ar="دوراتنا">Courses</a>
+                <a href="#stories" class="nav-link" data-en="Success Stories" data-ar="قصص نجاح">Success Stories</a>
+                <a href="#coaching" class="nav-link" data-en="Coaching" data-ar="كوتشينغ">Coaching</a>
+            </nav>
+
+            <!-- القسم الأيمن: الأزرار -->
+            <div class="header-actions">
+                <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+                    <span class="lang-text">EN</span>
+                </button>
+                <a href="#contact" class="btn-cta" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- ============================================= -->
+    <!-- LUXURY VIDEO BACKGROUND HERO SECTION          -->
+    <!-- ============================================= -->
+    <section id="hero" class="hero-video-section">
+
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="hero-bg-video">
+            <source src="images/hero-slider.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Dark & Vibrant Gradient Overlay to make text pop -->
+        <div class="hero-video-overlay"></div>
+
+        <!-- Hero Content Container -->
+        <div class="hero-content-container">
+
+            <!-- Top Badge -->
+            <div class="hero-top-badge">
+                <i class="fa-solid fa-sparkles"></i>
+                <span data-ar="مرحباً بك في عالم التطور المستمر" data-en="Welcome To Continuous Growth">مرحباً بك في
+                    عالم التطور المستمر</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="hero-main-title" data-ar="نرافقك لنصنع معاً أفضل نسخة من ذاتك"
+                data-en="Guiding You To Craft The Best Version of Yourself">
+                نرافقك لنصنع معاً أفضل نسخة من ذاتك
+            </h1>
+
+            <!-- Subtitle / Description -->
+            <p class="hero-sub-desc"
+                data-ar="استشارات احترافية وبرامج كوتشينغ متخصصة تلهمك، ترشدك، وتمكنك لتحقيق أهدافك الشخصية والمهنية."
+                data-en="Professional consulting and specialized coaching programs to inspire, guide, and empower you.">
+                استشارات احترافية وبرامج كوتشينغ متخصصة تلهمك، ترشدك، وتمكنك لتحقيق أهدافك الشخصية والمهنية.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="hero-buttons-flex">
+                <a href="#contact" class="hero-btn-primary">
+                    <span data-ar="احجز استشارتك الآن" data-en="Book Your Session">احجز استشارتك الآن</span>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="#coaching" class="hero-btn-secondary">
+                    <span data-ar="استكشف خدماتنا" data-en="Explore Services">استكشف خدماتنا</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================= -->
+    <!-- ABOUT US SECTION                              -->
+    <!-- ============================================= -->
+    <section id="about" class="about-section">
+        <div class="container">
+
+            <!-- Main Section Header -->
+            <div class="section-header">
+                <span class="sub-title" data-en="Empowering Your Journey" data-ar="تمكين رحلتك نحو التميز">Empowering
+                    Your Journey</span>
+                <h2 class="main-title" data-en="About RS Coaching & Consulting"
+                    data-ar="عن مركز RS للتدريب والاستشارات">About RS Coaching & Consulting</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- About Content Grid -->
+            <div class="about-grid">
+
+                <!-- Column 1: Founder & Master Coach Profile -->
+                <div class="about-card founder-card">
+                    <div class="card-badge" data-en="Founder & Lead Coach" data-ar="المؤسس والمدربة الرئيسية">Founder &
+                        Lead Coach</div>
+                    <div class="founder-image-wrapper">
+                        <img src="images/c. rania.png" alt="Dr. Rania Shehadi" class="founder-img">
+                    </div>
+                    <div class="founder-info">
+                        <h3 data-en="Dr. Rania Shehadi" data-ar="د. رانيا شحاده">Dr. Rania Shehadi</h3>
+                        <p class="founder-title"
+                            data-en="Sociology Lecturer | Educational Trainer | Certified ICF Coach"
+                            data-ar="محاضرة في علم الاجتماع | مدربة تربوية | كوتش معتمد ICF">Sociology Lecturer |
+                            Educational Trainer | Certified ICF Coach</p>
+                        <p class="founder-bio"
+                            data-en="With over 22 years of expertise in education and 10+ years in professional coaching, Dr. Rania empowers individuals and organizations to unlock their highest potential."
+                            data-ar="بخبرة تمتد لأكثر من 22 عاماً في مجال التعليم و10+ سنوات في التدريب الاحترافي والكوتشينغ، تمكّن د. رانيا الأفراد والمؤسسات من تحقيق أقصى إمكاناتهم.">
+                            With over 22 years of expertise in education and 10+ years in professional coaching, Dr.
+                            Rania empowers individuals and organizations to unlock their highest potential.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Center Philosophy & Core Values -->
+                <div class="about-card story-card">
+                    <div class="story-content">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <h3 class="philosophy-title" data-en="Unlocking Human Potential"
+                            data-ar="إطلاق العنان للقدرات البشرية">Unlocking Human Potential</h3>
+                        <p class="philosophy-text"
+                            data-en="We believe each individual is the master of their own destiny, but sometimes professional guidance is what turns ambition into achievement. Our customized programs build leadership, emotional intelligence, and sustainable growth."
+                            data-ar="نؤمن بأن كل شخص قادر على قيادة مساره بنجاح، ولكن القليل من التوجيه الاحترافي هو ما يحول الطموح إلى إنجاز. صُممت برامجنا المخصصة لبناء مهارات القيادة، الذكاء العاطفي، والنمو المستدام.">
+                            We believe each individual is the master of their own destiny, but sometimes professional
+                            guidance is what turns ambition into achievement. Our customized programs build leadership,
+                            emotional intelligence, and sustainable growth.
+                        </p>
+
+                        <!-- Feature Bullets with FontAwesome Icons -->
+                        <ul class="about-features">
+                            <li>
+                                <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+                                <div class="feature-text">
+                                    <strong data-en="Internationally Certified"
+                                        data-ar="اعتمادات دولية موثوقة">Internationally Certified</strong>
+                                    <span data-en="Accredited by ICF, Canadian Training Center, and Arab Board."
+                                        data-ar="برامج معتمدة من ICF، المركز الكندي، والبرد العربي.">Accredited by ICF,
+                                        Canadian Training Center, and Arab Board.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                                <div class="feature-text">
+                                    <strong data-en="Evidence-Based Methodologies"
+                                        data-ar="منهجيات علمية مثبتة">Evidence-Based Methodologies</strong>
+                                    <span data-en="Combining NLP, Psychodrama, and modern HR strategies."
+                                        data-ar="دمج أساليب البرمجة اللغوية العصبية، السيكودراما، وإدارة الموارد البشرية.">Combining
+                                        NLP, Psychodrama, and modern HR strategies.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+                                <div class="feature-text">
+                                    <strong data-en="Tailored & Flexible Solutions" data-ar="حلول مرنة ومخصصة">Tailored
+                                        & Flexible Solutions</strong>
+                                    <span data-en="In-person, online, or hybrid options to suit your organization."
+                                        data-ar="تدريب حضوري، عبر الإنترنت، أو نظام هجين يناسب احتياجاتكم.">In-person,
+                                        online, or hybrid options to suit your organization.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Quick Stats Counter Strip -->
+            <div class="about-stats-grid">
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="stat-number">22+</div>
+                    <div class="stat-label" data-en="Years of Educational Expertise" data-ar="سنة خبرة تعليمية وتربوية">
+                        Years of Educational Expertise</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label" data-en="Years in Professional Coaching"
+                        data-ar="سنوات في الكوتشينغ والتدريب">Years in Professional Coaching</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label" data-en="Trainees & Clients Empowered" data-ar="متدرب وعميل تم تمكينهم">
+                        Trainees & Clients Empowered</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label" data-en="Accredited & Certified Programs"
+                        data-ar="شهادات وبرامج معتمدة دولياً">Accredited & Certified Programs</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- COURSES ACCORDION SECTION (ALL 24 COURSES)    -->
+    <!-- ============================================= -->
+    <section id="courses" class="cs-acc-section">
+        <div class="cs-acc-container">
+
+            <!-- Section Title Header -->
+            <div class="cs-acc-header">
+                <span class="cs-acc-subtitle" data-ar="طوّر معرفتك" data-en="Expand Your Knowledge">طوّر معرفتك</span>
+                <h2 class="cs-acc-maintitle" data-ar="دوراتنا الاحترافية" data-en="Our Professional Courses">دوراتنا
+                    الاحترافية</h2>
+                <p class="cs-acc-desc" data-ar="إستكشف برامجنا المتميزة والمقسمة حسب المجالات لتطوير مهاراتك الشاملة"
+                    data-en="Explore our specialized programs designed to elevate your personal and professional growth">
+                    إستكشف برامجنا المتميزة والمقسمة حسب المجالات لتطوير مهاراتك الشاملة</p>
+                <div class="cs-acc-line"></div>
+            </div>
+
+            <!-- CATEGORY 1: تطوير الذات (14 كورساً) -->
+            <div class="category-box">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <div class="cat-title-group">
+                        <div class="cat-icon"><i class="fa-solid fa-user-gear"></i></div>
+                        <div>
+                            <h3 data-ar="تطوير الذات" data-en="Self Development">تطوير الذات</h3>
+                            <p data-ar="14 دورة تدريبية لبناء الشخصية والسلام النفسي والمهارات التواصلية"
+                                data-en="14 training courses for personal growth and communication skills">14 دورة
+                                تدريبية لبناء الشخصية والسلام النفسي والمهارات التواصلية</p>
+                        </div>
+                    </div>
+                    <div class="cat-action">
+                        <span class="action-text" data-ar="اضغط لرؤية المزيد" data-en="Click to view more">اضغط لرؤية
+                            المزيد</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="category-content">
+                    <div class="courses-subgrid">
+
+                        <!-- Course 1 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/36.jpeg" alt="إدارة الذات بنجاح" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="إدارة الذات بنجاح" data-en="Self Management Success">إدارة الذات بنجاح</h4>
+                                <p data-ar="امتلك مهارات تنظيم الوقت وتوجيه بوصلتك الشخصية نحو تحقيق أهدافك بكفاءة عالية."
+                                    data-en="Master time management skills and guide your personal compass toward achieving your goals efficiently.">
+                                    امتلك مهارات تنظيم الوقت وتوجيه بوصلتك الشخصية نحو تحقيق أهدافك بكفاءة عالية.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 2 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/30.jpeg" alt="تصالح مع الذات" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="تصالح مع الذات" data-en="Reconciliation with Self">تصالح مع الذات</h4>
+                                <p data-ar="رحلة داخلية لبناء السلام النفسي، تعزيز الثقة بالنفس، وتقبل القدرات وتطويرها."
+                                    data-en="An inner journey to build inner peace, boost self-confidence, and accept and develop capabilities.">
+                                    رحلة داخلية لبناء السلام النفسي، تعزيز الثقة بالنفس، وتقبل القدرات وتطويرها.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 3 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/28.jpeg" alt="إدارة الضغوطات النفسية" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="إدارة الضغوطات النفسية" data-en="Stress Management">إدارة الضغوطات النفسية
+                                </h4>
+                                <p data-ar="تعلم الإستراتيجيات العملية للتعامل مع ضغوط الحياة والعمل والحفاظ على الهدوء والإنتاجية."
+                                    data-en="Learn practical strategies to deal with life and work stress while maintaining calm and productivity.">
+                                    تعلم الإستراتيجيات العملية للتعامل مع ضغوط الحياة والعمل والحفاظ على الهدوء
+                                    والإنتاجية.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 4 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/26.jpeg" alt="المرونة النفسية من خلال (NLP)" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="المرونة النفسية من خلال (NLP)" data-en="Psychological Resilience (NLP)">
+                                    المرونة النفسية من خلال البرمجة اللغوية العصبية (NLP)</h4>
+                                <p data-ar="أعد برمجة أنماطك الفكرية، وتحكم في استجاباتك السلوكية لبناء حصانة نفسية استثنائية."
+                                    data-en="Reprogram your thought patterns and control behavioral responses for mental resilience.">
+                                    أعد برمجة أنماطك الفكرية، وتحكم في استجاباتك السلوكية لبناء حصانة نفسية استثنائية.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 5 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/23.jpeg" alt="الاحتراق الوظيفي" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="الاحتراق الوظيفي (Job Burnout)" data-en="Job Burnout">الاحتراق الوظيفي (Job
+                                    Burnout)</h4>
+                                <p data-ar="تعرّف على علامات الإجهاد المهني المزمن، وتعلّم استراتيجيات عملية لاستعادة شغفك وتحقيق التوازن."
+                                    data-en="Recognize chronic occupational stress signs and learn practical strategies to restore passion and balance.">
+                                    تعرّف على علامات الإجهاد المهني المزمن، وتعلّم استراتيجيات عملية لاستعادة شغفك
+                                    وتحقيق التوازن.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 6 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/20.jpeg" alt="حل المشكلات واتخاذ القرارات" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="حل المشكلات واتخاذ القرارات" data-en="Problem Solving & Decision Making">حل
+                                    المشكلات واتخاذ القرارات</h4>
+                                <p data-ar="اكتسب المنهجية العلمية والتحليلية لتفكيك المعضلات واختيار الحل الأمثل بثقة تامة."
+                                    data-en="Acquire scientific and analytical methodology to deconstruct dilemmas and choose optimal solutions confidently.">
+                                    اكتسب المنهجية العلمية والتحليلية لتفكيك المعضلات واختيار الحل الأمثل بثقة تامة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 7 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/25.jpeg" alt="المرونة النفسية" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="المرونة النفسية" data-en="Mental Resilience">المرونة النفسية</h4>
+                                <p data-ar="بناء الحصانة الداخلية والقدرة على التكيف مع التغيرات المفاجئة ومواجهة التحديات بمرونة."
+                                    data-en="Build internal immunity and the ability to adapt to sudden changes and face challenges flexibly.">
+                                    بناء الحصانة الداخلية والقدرة على التكيف مع التغيرات المفاجئة ومواجهة التحديات
+                                    بمرونة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 8 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/19.jpeg" alt="تحليل الشخصيات" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="تحليل الشخصيات" data-en="Personality Analysis">تحليل الشخصيات</h4>
+                                <p data-ar="فهم الأنماط البشرية المختلفة والتعرف على دوافع السلوك لتسهيل التفاعل اليومي والمهني."
+                                    data-en="Understand different human types and behavior motives to ease daily and professional interactions.">
+                                    فهم الأنماط البشرية المختلفة والتعرف على دوافع السلوك لتسهيل التفاعل اليومي والمهني.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 9 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/18.jpeg" alt="مهارات الإقناع والتأثير" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="مهارات الإقناع والتأثير" data-en="Persuasion & Influence Skills">مهارات
+                                    الإقناع والتأثير</h4>
+                                <p data-ar="اتقن الفنون اللغوية والنفسية لتوصيل أفكارك وجذب الآخرين إلى وجهة نظرك باحترافية."
+                                    data-en="Master linguistic and psychological arts to convey ideas and attract others to your point of view professionally.">
+                                    اتقن الفنون اللغوية والنفسية لتوصيل أفكارك وجذب الآخرين إلى وجهة نظرك باحترافية.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 10 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/12.jpeg" alt="لغة الجسد" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="لغة الجسد" data-en="Body Language">لغة الجسد</h4>
+                                <p data-ar="اقرأ الإشارات غير اللفظية وافهم الرسائل الخفية وراء الحركات لتعزيز تواصلك البصري."
+                                    data-en="Read non-verbal signals and understand hidden messages behind movements to enhance visual communication.">
+                                    اقرأ الإشارات غير اللفظية وافهم الرسائل الخفية وراء الحركات لتعزيز تواصلك البصري.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 11 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/11.jpeg" alt="إدارة الغضب" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="إدارة الغضب" data-en="Anger Management">إدارة الغضب</h4>
+                                <p data-ar="أدوات وحلول سيكولوجية للتحكم في الانفعالات السريعة وتحويل الطاقة السلبية إلى قرارات متزنة."
+                                    data-en="Psychological tools and solutions to control emotional reactions and transform negative energy into balanced decisions.">
+                                    أدوات وحلول سيكولوجية للتحكم في الانفعالات السريعة وتحويل الطاقة السلبية إلى قرارات
+                                    متزنة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 12 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/9.jpg" alt="الذكاء العاطفي" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="الذكاء العاطفي" data-en="Emotional Intelligence">الذكاء العاطفي</h4>
+                                <p data-ar="فهم مشاعرك ومشاعر الآخرين واستثمارها لبناء علاقات شخصية ومهنية متينة ومثمرة."
+                                    data-en="Understand your feelings and others' emotions to build strong personal and professional relationships.">
+                                    فهم مشاعرك ومشاعر الآخرين واستثمارها لبناء علاقات شخصية ومهنية متينة ومثمرة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 13 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/8.jpeg" alt="إدارة المشاعر" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1499209974431-9dac3ada00d7?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="إدارة المشاعر" data-en="Managing Emotions">إدارة المشاعر</h4>
+                                <p data-ar="توجيه العواطف الداخلية والسيطرة على التشتت الوجداني لتحقيق السلام والاستقرار اليومي."
+                                    data-en="Guide internal emotions and control emotional distraction to achieve daily peace and stability.">
+                                    توجيه العواطف الداخلية والسيطرة على التشتت الوجداني لتحقيق السلام والاستقرار اليومي.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 14 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/8.JPG" alt="الخطوات الخمس للتفاعل والتواصل الفعال" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge" data-ar="تطوير الذات" data-en="Self Development">تطوير
+                                    الذات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="الخطوات الخمس للتفاعل والتواصل الفعال"
+                                    data-en="5 Steps for Effective Communication">الخطوات الخمس للتفاعل والتواصل الفعال
+                                </h4>
+                                <p data-ar="القواعد الخمس الذهبية لترك انطباع رائع وبناء قنوات تواصل واضحة مع أي جمهور."
+                                    data-en="The five golden rules to leave a great impression and build clear communication channels with any audience.">
+                                    القواعد الخمس الذهبية لترك انطباع رائع وبناء قنوات تواصل واضحة مع أي جمهور.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 2: إدارة وقيادة (6 كورسات) -->
+            <div class="category-box">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <div class="cat-title-group">
+                        <div class="cat-icon mgmt"><i class="fa-solid fa-chart-line"></i></div>
+                        <div>
+                            <h3 data-ar="إدارة وقيادة" data-en="Management & Leadership">إدارة وقيادة</h3>
+                            <p data-ar="6 دورات متخصصة في التخطيط الإستراتيجي وقيادة فرق العمل والموارد البشرية"
+                                data-en="6 specialized courses in strategic planning, leadership, and human resources">6
+                                دورات متخصصة في التخطيط الإستراتيجي وقيادة فرق العمل والموارد البشرية</p>
+                        </div>
+                    </div>
+                    <div class="cat-action">
+                        <span class="action-text" data-ar="اضغط لرؤية المزيد" data-en="Click to view more">اضغط لرؤية
+                            المزيد</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="category-content">
+                    <div class="courses-subgrid">
+
+                        <!-- Course 15 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/7.jpeg" alt="القيادة وفرق العمل" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-mgmt" data-ar="إدارة وقيادة" data-en="Leadership">إدارة
+                                    وقيادة</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="القيادة وفرق العمل" data-en="Leadership & Teamwork">القيادة وفرق العمل</h4>
+                                <p data-ar="قيادة المجموعات باحترافية، توزيع الأدوار، وبناء روح الفريق الواحد لتحقيق أعلى كفاءة."
+                                    data-en="Lead groups professionally, distribute roles, and build team spirit for maximum efficiency.">
+                                    قيادة المجموعات باحترافية، توزيع الأدوار، وبناء روح الفريق الواحد لتحقيق أعلى كفاءة.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 16 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/31.jpeg" alt="التخطيط الإستراتيجي" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-mgmt" data-ar="إدارة وقيادة" data-en="Leadership">إدارة
+                                    وقيادة</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="التخطيط الإستراتيجي" data-en="Strategic Planning">التخطيط الإستراتيجي</h4>
+                                <p data-ar="رسم خطط بعيدة المدى، تحديد الرؤية والمستهدفات، ووضع مؤشرات قياس أداء واضحة."
+                                    data-en="Draw long-term plans, define visions and targets, and establish clear KPIs.">
+                                    رسم خطط بعيدة المدى، تحديد الرؤية والمستهدفات، ووضع مؤشرات قياس أداء واضحة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 17 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/7.JPG" alt="إدارة الأزمات والمخاطر" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-mgmt" data-ar="إدارة وقيادة" data-en="Leadership">إدارة
+                                    وقيادة</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="إدارة الأزمات والمخاطر (Crisis & Risk)" data-en="Crisis & Risk Management">
+                                    إدارة الأزمات والمخاطر (Crisis & Risk)</h4>
+                                <p data-ar="اكتسب المهارات اللازمة للتنبؤ بالتحديات، وضع خطط الطوارئ الفعالة، وقيادة فريقك بنجاح."
+                                    data-en="Gain necessary skills to predict challenges, set effective emergency plans, and lead teams successfully.">
+                                    اكتسب المهارات اللازمة للتنبؤ بالتحديات، وضع خطط الطوارئ الفعالة، وقيادة فريقك
+                                    بنجاح.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 18 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/6.jpg" alt="إدارة الموارد البشرية" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-mgmt" data-ar="إدارة وقيادة" data-en="Leadership">إدارة
+                                    وقيادة</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="إدارة الموارد البشرية (HR)" data-en="Human Resources Management (HR)">إدارة
+                                    الموارد البشرية (HR)</h4>
+                                <p data-ar="جذب الكفاءات، تقييم الأداء، وتطوير الأنظمة الداخلية للمؤسسات والشركات الناشئة."
+                                    data-en="Attract talent, evaluate performance, and develop internal systems for organizations and startups.">
+                                    جذب الكفاءات، تقييم الأداء، وتطوير الأنظمة الداخلية للمؤسسات والشركات الناشئة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 19 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/5.jpeg" alt="القيادة التربوية" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-mgmt" data-ar="إدارة وقيادة" data-en="Leadership">إدارة
+                                    وقيادة</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="القيادة التربوية" data-en="Educational Leadership">القيادة التربوية</h4>
+                                <p data-ar="تأهيل القادة في الميدان التعليمي لإدارة المؤسسات والمدارس برؤية تربوية حديثة ومتطورة."
+                                    data-en="Qualify leaders in education to manage institutions and schools with a modern educational vision.">
+                                    تأهيل القادة في الميدان التعليمي لإدارة المؤسسات والمدارس برؤية تربوية حديثة
+                                    ومتطورة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 20 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/5.jpg" alt="الإدارة الصفية" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-mgmt" data-ar="إدارة وقيادة" data-en="Leadership">إدارة
+                                    وقيادة</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="الإدارة الصفية" data-en="Classroom Management">الإدارة الصفية</h4>
+                                <p data-ar="للمعلمين والمشرفين؛ إستراتيجيات ضبط الصف، جذب الانتباه، وإدارة الحصص بكفاءة مثالية."
+                                    data-en="For teachers and supervisors; classroom control strategies, capturing attention, and efficient lesson management.">
+                                    للمعلمين والمشرفين؛ إستراتيجيات ضبط الصف، جذب الانتباه، وإدارة الحصص بكفاءة مثالية.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 3: تكنولوجيا ولغات (3 كورسات) -->
+            <div class="category-box">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <div class="cat-title-group">
+                        <div class="cat-icon tech"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div>
+                            <h3 data-ar="تكنولوجيا ولغات" data-en="Tech & Languages">تكنولوجيا ولغات</h3>
+                            <p data-ar="برامج مكثفة في التسويق الرقمي، برمجة المواقع، وإتقان اللغات"
+                                data-en="Intensive programs in digital marketing, web development, and language mastery">
+                                برامج مكثفة في التسويق الرقمي، برمجة المواقع، وإتقان اللغات</p>
+                        </div>
+                    </div>
+                    <div class="cat-action">
+                        <span class="action-text" data-ar="اضغط لرؤية المزيد" data-en="Click to view more">اضغط لرؤية
+                            المزيد</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="category-content">
+                    <div class="courses-subgrid">
+
+                        <!-- Course 21 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/4.jpeg" alt="Digital Marketing" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-tech" data-ar="تكنولوجيا ولغات"
+                                    data-en="Tech & Languages">تكنولوجيا ولغات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="Digital Marketing" data-en="Digital Marketing">Digital Marketing</h4>
+                                <p data-ar="التسويق الرقمي وإدارة الإعلانات وبناء الإستراتيجيات لجذب العملاء وزيادة المبيعات."
+                                    data-en="Digital marketing, ads management, and building strategies to attract clients and boost sales.">
+                                    التسويق الرقمي وإدارة الإعلانات وبناء الإستراتيجيات لجذب العملاء وزيادة المبيعات.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 22 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/4.jpg" alt="دورات اللغات" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-tech" data-ar="تكنولوجيا ولغات"
+                                    data-en="Tech & Languages">تكنولوجيا ولغات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="دورات اللغات" data-en="Language Courses">دورات اللغات</h4>
+                                <p data-ar="يتوفر تعليم اللغات عبر برامج مكثفة ومحترفة من الصفر حتى الإتقان الكامل والتحدث بثقة."
+                                    data-en="Language learning available through intensive professional programs from zero to fluency.">
+                                    يتوفر تعليم اللغات عبر برامج مكثفة ومحترفة من الصفر حتى الإتقان الكامل والتحدث بثقة.
+                                </p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Course 23 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/32.jpeg" alt="Web Development" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-tech" data-ar="تكنولوجيا ولغات"
+                                    data-en="Tech & Languages">تكنولوجيا ولغات</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="Web Development" data-en="Web Development">Web Development</h4>
+                                <p data-ar="تطوير المواقع الإلكترونية الحديثة من الصفر وتصميم واجهات برمجية متجاوبة وجذابة."
+                                    data-en="Developing modern websites from scratch and designing responsive, attractive web interfaces.">
+                                    تطوير المواقع الإلكترونية الحديثة من الصفر وتصميم واجهات برمجية متجاوبة وجذابة.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 4: TOT (كورس واحد) -->
+            <div class="category-box">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <div class="cat-title-group">
+                        <div class="cat-icon tot"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div>
+                            <h3 data-ar="إعداد المدربين (TOT)" data-en="Train The Trainer (TOT)">إعداد المدربين (TOT)
+                            </h3>
+                            <p data-ar="البرنامج الاحترافي المتكامل لإعداد وقوف المدرب على المسرح وتصميم المناهج"
+                                data-en="Comprehensive professional program to prepare trainers for public speaking and curriculum design">
+                                البرنامج الاحترافي المتكامل لإعداد وقوف المدرب على المسرح وتصميم المناهج</p>
+                        </div>
+                    </div>
+                    <div class="cat-action">
+                        <span class="action-text" data-ar="اضغط لرؤية المزيد" data-en="Click to view more">اضغط لرؤية
+                            المزيد</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="category-content">
+                    <div class="courses-subgrid">
+
+                        <!-- Course 24 -->
+                        <div class="sub-course-card">
+                            <div class="sub-card-img-wrapper">
+                                <img src="images/34.png" alt="دورات احترافية تدريب المدربين" class="sub-card-img"
+                                    onerror="this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500&auto=format&fit=crop'">
+                                <span class="sub-badge badge-tot" data-ar="TOT" data-en="TOT">TOT</span>
+                            </div>
+                            <div class="sub-card-body">
+                                <h4 data-ar="دورات احترافية تدريب المدربين (TOT)"
+                                    data-en="Professional Train The Trainer (TOT)">دورات احترافية تدريب المدربين (TOT)
+                                </h4>
+                                <p data-ar="البرنامج المتكامل لإعداد المدربين المحترفين؛ تمكن من الوقوف على المسرح وإعداد المناهج."
+                                    data-en="Comprehensive program to prepare professional trainers; master public speaking and course design.">
+                                    البرنامج المتكامل لإعداد المدربين المحترفين؛ تمكن من الوقوف على المسرح وإعداد
+                                    المناهج.</p>
+                                <a href="#contact" class="sub-card-btn" data-ar="سجّل الآن" data-en="Enroll Now">سجّل
+                                    الآن <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================= -->
+    <!-- VIBRANT SOCIAL RESPONSIBILITY SECTION         -->
+    <!-- ============================================= -->
+    <section id="stories" class="sr-vibrant-section">
+        <!-- Background Animated Shapes for Life -->
+        <div class="sr-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+
+        <div class="sr-vibrant-container">
+
+            <!-- Section Header: Centered & Alive -->
+            <div class="sr-vibrant-header">
+                <span class="sr-vibrant-subtitle" data-ar="بصمتنا المجتمعية" data-en="Our Community Footprint">بصمتنا
+                    المجتمعية</span>
+                <h2 class="sr-vibrant-maintitle" data-ar="أثرنا في المجتمع والعمل الإنساني"
+                    data-en="Humanitarian Impact & Community Work">أثرنا في المجتمع والعمل الإنساني</h2>
+                <div class="sr-vibrant-line"></div>
+                <p class="sr-vibrant-desc"
+                    data-ar="نؤمن في RS Coaching & Consulting بأن النمو الحقيقي يبدأ من خدمة المجتمع وبناء الإنسان. العطاء هو جوهر رسالتنا."
+                    data-en="At RS Coaching & Consulting, we believe true growth begins with serving the community and empowering people. Giving is the core of our mission.">
+                    نؤمن في RS Coaching & Consulting بأن النمو الحقيقي يبدأ من خدمة المجتمع وبناء الإنسان. العطاء هو
+                    جوهر رسالتنا.
+                </p>
+            </div>
+
+            <!-- 1. Glassmorphism Impact Counters -->
+            <div class="sr-vibrant-stats-grid">
+
+                <div class="sr-vibrant-stat-card">
+                    <div class="stat-vibrant-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                    <div class="stat-vibrant-info">
+                        <div class="stat-vibrant-number">+60</div>
+                        <p class="stat-vibrant-label" data-ar="متطوع وشاب مشارك" data-en="Active Volunteers">متطوع وشاب
+                            مشارك</p>
+                    </div>
+                </div>
+
+                <div class="sr-vibrant-stat-card">
+                    <div class="stat-vibrant-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+                    <div class="stat-vibrant-info">
+                        <div class="stat-vibrant-number">+30</div>
+                        <p class="stat-vibrant-label" data-ar="طفل في الأنشطة الترفيهية" data-en="Children Empowered">
+                            طفل في الأنشطة الترفيهية</p>
+                    </div>
+                </div>
+
+                <div class="sr-vibrant-stat-card">
+                    <div class="stat-vibrant-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+                    <div class="stat-vibrant-info">
+                        <div class="stat-vibrant-number">100%</div>
+                        <p class="stat-vibrant-label" data-ar="عطاء ومبادرة مجتمعية" data-en="Community Giving">عطاء
+                            ومبادرة مجتمعية</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2. Interactive Initiative Cards -->
+            <div class="sr-vibrant-initiatives-grid">
+
+                <!-- Initiative 1: أيدي بأيدك -->
+                <div class="init-vibrant-card card-1">
+                    <div class="init-vibrant-icon-box">
+                        <i class="fa-solid fa-box-tissue"></i>
+                    </div>
+                    <div class="init-vibrant-content">
+                        <h3 data-ar="حملة 'أيدي بأيدك'" data-en="'Hand in Hand' Campaign">حملة "أيدي بأيدك"</h3>
+                        <p data-ar="تأمين الحصص الغذائية والمستلزمات الأساسية لدعم الأسر المتعففة والنازحين."
+                            data-en="Providing food parcels and essential supplies to support vulnerable and displaced families.">
+                            تأمين الحصص الغذائية والمستلزمات الأساسية لدعم الأسر المتعففة والنازحين.</p>
+                    </div>
+                    <div class="card-vibrant-glow"></div>
+                </div>
+
+                <!-- Initiative 2: الإفطارات الخيرية -->
+                <div class="init-vibrant-card card-2">
+                    <div class="init-vibrant-icon-box">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="init-vibrant-content">
+                        <h3 data-ar="الإفطارات الخيرية" data-en="Charity Iftars">الإفطارات الخيرية</h3>
+                        <p data-ar="تنظيم إفطارات رمضانية وأنشطة ترفيهية للأيتام بالتعاون مع الجمعيات المحلية."
+                            data-en="Organizing Ramadan Iftars and recreational activities for orphans with local partners.">
+                            تنظيم إفطارات رمضانية وأنشطة ترفيهية للأيتام بالتعاون مع الجمعيات المحلية.</p>
+                    </div>
+                    <div class="card-vibrant-glow"></div>
+                </div>
+
+                <!-- Initiative 3: التمكين الشبابي -->
+                <div class="init-vibrant-card card-3">
+                    <div class="init-vibrant-icon-box">
+                        <i class="fa-solid fa-users-line"></i>
+                    </div>
+                    <div class="init-vibrant-content">
+                        <h3 data-ar="التمكين الشبابي" data-en="Youth Empowerment">التمكين الشبابي</h3>
+                        <p data-ar="إشراك طلاب الثانويات في صيدا في حملات التبرع والمبادرات الميدانية."
+                            data-en="Engaging Saida high school students in donation campaigns and field initiatives.">
+                            إشراك طلاب الثانويات في صيدا في حملات التبرع والمبادرات الميدانية.</p>
+                    </div>
+                    <div class="card-vibrant-glow"></div>
+                </div>
+
+                <!-- Initiative 4: الورش التدريبية -->
+                <div class="init-vibrant-card card-4">
+                    <div class="init-vibrant-icon-box">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="init-vibrant-content">
+                        <h3 data-ar="الورش التدريبية" data-en="Training Workshops">الورش التدريبية</h3>
+                        <p data-ar="تقديم دورات تطوير مهارات التواصل والقيادة بالتعاون مع الجمعيات الكشفية."
+                            data-en="Providing communication and leadership skills workshops with Scout associations.">
+                            تقديم دورات تطوير مهارات التواصل والقيادة بالتعاون مع الجمعيات الكشفية.</p>
+                    </div>
+                    <div class="card-vibrant-glow"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- COACHING & RANIA SHEHADI SECTION              -->
+    <!-- ============================================= -->
+    <section id="coaching" class="coaching-section">
+        <div class="coaching-container">
+
+            <!-- Left Side: Rania's Photo & Badges -->
+            <div class="coaching-image-col">
+                <div class="photo-card-wrapper">
+                    <!-- Glowing effect background -->
+                    <div class="photo-glow"></div>
+
+                    <!-- Main Image -->
+                    <img src="images/seee.jpeg" alt="Dr. Rania Shehadi" class="rania-img">
+
+                    <!-- Floating Badge 1: 100% Confidentiality -->
+                    <div class="floating-badge badge-top">
+                        <div class="badge-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <div class="badge-text">
+                            <span class="badge-title">100%</span>
+                            <span class="badge-desc" data-ar="خصوصية وسرية تامة" data-en="100% Confidentiality">خصوصية
+                                وسرية تامة</span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2: Personalized Sessions -->
+                    <div class="floating-badge badge-bottom">
+                        <div class="badge-icon"><i class="fa-solid fa-sliders"></i></div>
+                        <div class="badge-text">
+                            <span class="badge-title" data-ar="جلسات مخصصة لك" data-en="Tailored Sessions">جلسات مخصصة
+                                لك</span>
+                            <span class="badge-desc" data-ar="حلول تناسب احتياجاتك"
+                                data-en="Solutions built for you">حلول تناسب احتياجاتك</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Content & Coaching Types -->
+            <div class="coaching-content-col">
+
+                <!-- Subtitle & Title -->
+                <div class="coaching-header">
+                    <span class="coaching-subtitle" data-ar="خدمات الكوتشينغ والتوجيه الإستشاري"
+                        data-en="Coaching & Advisory Services">خدمات الكوتشينغ والتوجيه الإستشاري</span>
+                    <h2 class="coaching-maintitle" data-ar="د. رانيا شحادة - كوتش معتمد"
+                        data-en="Dr. Rania Shehadi - Certified Coach">د. رانيا شحادة - كوتش معتمد</h2>
+                    <p class="coaching-intro"
+                        data-ar="نقدم جلسات كوتشينغ فردية (One-to-One) ومخصصة بالكامل لمساعدتك على تفكيك التحديات التي تواجهك، واكتشاف الحلول الكامنة داخلك لتحقيق التوازن والنجاح في حياتك المهنية والشخصية."
+                        data-en="We offer fully personalized, One-to-One coaching sessions designed to help you deconstruct challenges and discover inner solutions for personal and professional growth.">
+                        نقدم جلسات كوتشينغ فردية (One-to-One) ومخصصة بالكامل لمساعدتك على تفكيك التحديات التي تواجهك،
+                        واكتشاف الحلول الكامنة داخلك لتحقيق التوازن والنجاح في حياتك المهنية والشخصية.
+                    </p>
+                </div>
+
+                <!-- Coaching Categories Grid -->
+                <div class="coaching-cards-grid">
+
+                    <!-- Card 1 -->
+                    <div class="c-card card-purple">
+                        <div class="c-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="c-info">
+                            <h3 data-ar="الكوتشينغ الشخصي وتطوير الذات" data-en="Personal Coaching & Self-Development">
+                                الكوتشينغ الشخصي وتطوير الذات</h3>
+                            <p data-ar="جلسات لترتيب الأهداف، بناء الثقة بالنفس، والتعامل مع المشاعر والضغوطات اليومية."
+                                data-en="Sessions for goal setting, building confidence, and managing emotions & daily stress.">
+                                جلسات لترتيب الأهداف، بناء الثقة بالنفس، والتعامل مع المشاعر والضغوطات اليومية.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="c-card card-blue">
+                        <div class="c-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="c-info">
+                            <h3 data-ar="التوجيه المهني والقيادي" data-en="Career & Leadership Guidance">التوجيه المهني
+                                والقيادي</h3>
+                            <p data-ar="مساعدتك على تفادي الاحتراق الوظيفي، اتخاذ القرارات المهنية المصيرية، وتطوير مهاراتك القيادية."
+                                data-en="Helping you avoid burnout, make critical career decisions, and master leadership skills.">
+                                مساعدتك على تفادي الاحتراق الوظيفي، اتخاذ القرارات المهنية المصيرية، وتطوير مهاراتك
+                                القيادية.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="c-card card-gradient">
+                        <div class="c-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="c-info">
+                            <h3 data-ar="التمكين والقيادة التربوية" data-en="Educational Empowerment & Leadership">
+                                التمكين والقيادة التربوية</h3>
+                            <p data-ar="توجيه خاص للمعلمين والمشرفين لتطوير الأداء الإداري والتعليمي وضبط البيئة الصفية."
+                                data-en="Tailored coaching for teachers and supervisors to enhance educational performance and classroom management.">
+                                توجيه خاص للمعلمين والمشرفين لتطوير الأداء الإداري والتعليمي وضبط البيئة الصفية.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA Booking Button Box -->
+                <div class="coaching-cta-wrapper">
+                    <a href="#contact" class="coaching-btn">
+                        <span class="btn-chat-icon"><i class="fa-solid fa-comments"></i></span>
+                        <span data-ar="احجز جلستك الإستشارية الآن" data-en="Book Your Consultation Session Now">احجز
+                            جلستك الإستشارية الآن</span>
+                        <i class="fa-solid fa-arrow-left btn-arrow"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================= -->
+    <!-- VIBRANT & INTERACTIVE CONTACT US SECTION      -->
+    <!-- ============================================= -->
+    <section id="contact" class="vibrant-contact-section">
+        <!-- Glowing Background Effects -->
+        <div class="contact-bg-glow glow-1"></div>
+        <div class="contact-bg-glow glow-2"></div>
+
+        <div class="vibrant-contact-container">
+
+            <!-- Section Header -->
+            <div class="contact-header">
+                <span class="contact-subtitle" data-ar="تواصل معنا" data-en="Get In Touch">تواصل معنا</span>
+                <h2 class="contact-maintitle" data-ar="نحن هنا لدعم رحلتك ونموك"
+                    data-en="We're Here To Support Your Journey">نحن هنا لدعم رحلتك ونموك</h2>
+                <div class="contact-line"></div>
+                <p class="contact-desc"
+                    data-ar="يسعدنا تواصلك معنا للإجابة على جميع استفساراتك أو لحجز جلساتك وتدريباتك القادمة."
+                    data-en="We'd love to hear from you! Reach out for inquiries, consultations, or upcoming sessions.">
+                    يسعدنا تواصلك معنا للإجابة على جميع استفساراتك أو لحجز جلساتك وتدريباتك القادمة.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- LEFT COLUMN: Contact Cards & Socials -->
+                <div class="contact-info-col">
+
+                    <!-- 1. WhatsApp / Phone Card -->
+                    <a href="https://wa.me/96103000000" target="_blank" class="contact-interactive-card card-whatsapp">
+                        <div class="c-card-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="c-card-details">
+                            <span class="c-card-label" data-ar="تواصل عبر الواتساب / الهاتف"
+                                data-en="WhatsApp & Direct Phone">تواصل عبر الواتساب / الهاتف</span>
+                            <h4 class="c-card-val">+961 03 000 000</h4>
+                        </div>
+                        <div class="c-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    </a>
+
+                    <!-- 2. Google Maps Location Card -->
+                    <a href="https://www.google.com/maps/search/?api=1&query=RS+Coaching+and+Consulting+Saida+Lebanon"
+                        target="_blank" class="contact-interactive-card card-location">
+                        <div class="c-card-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="c-card-details">
+                            <span class="c-card-label" data-ar="موقعنا على الخريطة" data-en="Our Location">موقعنا على
+                                الخريطة</span>
+                            <h4 class="c-card-val" data-ar="RS Coaching & Consulting - صيدا، لبنان"
+                                data-en="RS Coaching & Consulting - Saida, Lebanon">RS Coaching & Consulting - صيدا،
+                                لبنان</h4>
+                        </div>
+                        <div class="c-card-arrow"><i class="fa-solid fa-map-pin"></i></div>
+                    </a>
+
+                    <!-- 3. Social Media Vibrant Hub (WITH FACEBOOK!) -->
+                    <div class="social-hub-box">
+                        <h4 class="social-hub-title" data-ar="تابعنا على منصات التواصل" data-en="Follow Our Journey">
+                            تابعنا على منصات التواصل</h4>
+                        <div class="social-links-grid">
+
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/LifecaochRaniaShehadi" target="_blank"
+                                class="social-btn facebook-btn" title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/rs_coachingandconsulting" target="_blank"
+                                class="social-btn instagram-btn" title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/rania-shehadi-746082163/" target="_blank"
+                                class="social-btn linkedin-btn" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@rs_coachingconsulting?_r=1&_t=ZS-98O4q74KnAb"
+                                target="_blank" class="social-btn tiktok-btn" title="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN: Working Contact Form (Connected to Email) -->
+                <div class="contact-form-col">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="vibrant-form">
+
+                        <!-- حطينا الـ Access Key الخاص فيكِ هون -->
+                        <input type="hidden" name="access_key" value="bf199ee6-69b2-4f42-86b2-d6411e56e9cb">
+
+                        <!-- Form Options إذا أردتِ استخدامها -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <h3 class="form-title" data-ar="أرسل لنا رسالة مباشرة" data-en="Send Us A Direct Message">أرسل
+                            لنا رسالة مباشرة</h3>
+
+                        <div class="form-group">
+                            <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+                            <input type="text" name="name" placeholder="أدخل اسمك هنا..."
+                                data-ar-placeholder="أدخل اسمك هنا..." data-en-placeholder="Enter your name here..."
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-ar="رقم الهاتف / الواتساب" data-en="Phone / WhatsApp Number">رقم الهاتف /
+                                الواتساب</label>
+                            <input type="tel" name="phone" placeholder="+961 xx xxx xxx"
+                                data-ar-placeholder="+961 xx xxx xxx" data-en-placeholder="+961 xx xxx xxx" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-ar="الرسالة أو الاستفسار" data-en="Your Message">الرسالة أو الاستفسار</label>
+                            <textarea name="message" rows="4" placeholder="كيف يمكننا مساعدتك؟"
+                                data-ar-placeholder="كيف يمكننا مساعدتك؟" data-en-placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-vibrant-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-ar="إرسال الرسالة الآن" data-en="Send Message Now">إرسال الرسالة الآن</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================= -->
+    <!-- ELEGANT & CREATIVE FOOTER SECTION             -->
+    <!-- ============================================= -->
+    <footer class="site-vibrant-footer">
+        <div class="footer-top-glow"></div>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+
+                <!-- Column 1: Brand & Philosophy -->
+                <div class="footer-col brand-col">
+                    <h3 class="footer-logo">RS <span>Coaching & Consulting</span></h3>
+                    <p class="footer-about"
+                        data-ar="تمكين الأفراد والمؤسسات للوصول إلى أعلى مستويات الأداء والنمو المستدام في لبنان والوطن العربي."
+                        data-en="Empowering individuals and organizations to reach peak performance and sustainable growth.">
+                        تمكين الأفراد والمؤسسات للوصول إلى أعلى مستويات الأداء والنمو المستدام في لبنان والوطن العربي.
+                    </p>
+                    <div class="footer-badge">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span data-ar="مساحتك الخاصة للتطوّر المستمر" data-en="Your Space For Continuous Growth">مساحتك
+                            الخاصة للتطوّر المستمر</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-title" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#coaching" data-ar="خدمات الكوتشينغ" data-en="Coaching Services">خدمات
+                                الكوتشينغ</a></li>
+                        <li><a href="#consulting" data-ar="الاستشارات" data-en="Consulting">الاستشارات</a></li>
+                        <li><a href="#social-responsibility" data-ar="الأثر المجتمعي" data-en="Community Impact">الأثر
+                                المجتمعي</a></li>
+                        <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Hours & INSPIRING QUOTE (Updated) -->
+                <div class="footer-col hours-col">
+                    <h4 class="footer-title" data-ar="أوقات العمل واستقبال الجلسات" data-en="Working & Session Hours">
+                        أوقات العمل واستقبال الجلسات</h4>
+
+                    <ul class="footer-hours-list">
+                        <li>
+                            <span class="day-label" data-ar="الاثنين - الجمعة:" data-en="Monday - Friday:">الاثنين -
+                                الجمعة:</span>
+                            <span class="time-val">9:00 AM - 3:00 PM</span>
+                        </li>
+                    </ul>
+
+                    <!-- Colorful Quote Box -->
+                    <div class="footer-quote-box">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p data-ar="نحن هنا لنرافقك في رحلة اكتشاف الحلول الكامنة داخلك، للوصول إلى أفضل نسخة من ذاتك."
+                            data-en="We are here to guide you in discovering the solutions within, to reach the best version of yourself.">
+                            نحن هنا لنرافقك في رحلة اكتشاف الحلول الكامنة داخلك، للوصول إلى أفضل نسخة من ذاتك.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Bottom Copyrights -->
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 <strong>RS Coaching & Consulting</strong>. <span data-ar="جميع الحقوق محفوظة."
+                        data-en="All Rights Reserved.">جميع الحقوق محفوظة.</span>
+                </p>
+                <p class="footer-touch-text" data-ar="صُنع بشغف وحب للتطوير ✨"
+                    data-en="Crafted with passion for continuous growth ✨">
+                    صُنع بشغف وحب للتطوير ✨
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const langBtnText = document.querySelector('.lang-text');
+
+            // 1. تبديل لغة واتجاه الصفحة
+            if (currentLang === 'ar') {
+                currentLang = 'en';
+                html.setAttribute('dir', 'ltr');
+                html.setAttribute('lang', 'en');
+                if (langBtnText) langBtnText.textContent = 'AR';
+            } else {
+                currentLang = 'ar';
+                html.setAttribute('dir', 'rtl');
+                html.setAttribute('lang', 'ar');
+                if (langBtnText) langBtnText.textContent = 'EN';
+            }
+
+            // 2. تحديث جميع النصوص التي تحتوي على data-ar و data-en
+            const elements = document.querySelectorAll('[data-ar][data-en]');
+            elements.forEach(el => {
+                if (currentLang === 'en') {
+                    el.textContent = el.getAttribute('data-en');
+                } else {
+                    el.textContent = el.getAttribute('data-ar');
+                }
+            });
+
+            // 3. تحديث خانات الإدخال (Placeholders) في الفورم
+            const inputs = document.querySelectorAll('[data-ar-placeholder][data-en-placeholder]');
+            inputs.forEach(input => {
+                if (currentLang === 'en') {
+                    input.placeholder = input.getAttribute('data-en-placeholder');
+                } else {
+                    input.placeholder = input.getAttribute('data-ar-placeholder');
+                }
+            });
+
+            localStorage.setItem('preferred_language', currentLang);
+        }
+
+        // إعدادات البداية عند فتح الموقع
+        document.addEventListener("DOMContentLoaded", function () {
+            const html = document.documentElement;
+            const langBtnText = document.querySelector('.lang-text');
+
+            currentLang = 'ar';
+            html.setAttribute('dir', 'rtl');
+            html.setAttribute('lang', 'ar');
+            if (langBtnText) langBtnText.textContent = 'EN';
+
+            // ضبط النصوص الافتراضية للعربية
+            const elements = document.querySelectorAll('[data-ar][data-en]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute('data-ar');
+            });
+
+            const inputs = document.querySelectorAll('[data-ar-placeholder][data-en-placeholder]');
+            inputs.forEach(input => {
+                input.placeholder = input.getAttribute('data-ar-placeholder');
+            });
+
+            // ربط الزر
+            const langToggleBtn = document.getElementById('lang-toggle');
+            if (langToggleBtn) {
+                langToggleBtn.onclick = toggleLanguage;
+            }
+        });
+
+        function showSlide(index) {
+            // Hide all slides & remove active state from paginators
+            slides.forEach(slide => slide.classList.remove('active'));
+            paginators.forEach(dot => dot.classList.remove('active'));
+
+            // Set new active slide & paginator
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            paginators[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            let nextIndex = (currentSlide + 1) % slideCount;
+            showSlide(nextIndex);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+            resetAutoSlide(); // Re-start timer on manual click
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000); // تقليب تلقائي كل 5 ثواني
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        // Start auto play on page load
+        startAutoSlide();
+
+
+        // 1. Accordion Toggle
+        function toggleCategory(header) {
+            const box = header.parentElement;
+            box.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
