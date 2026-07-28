@@ -446,6 +446,55 @@ html[dir="rtl"] .nav-link::before {
     transform: scale(1.3);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
+/* مساحة الـ Hero الرئيسية */
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* يغطي ارتفاع الشاشة بالكامل على التلفون */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الفيديو ليكون خلفية */
+.hero-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* توسيط */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1; /* أقل من طبقة التغشية والمحتوى */
+    object-fit: cover; /* يغطي المساحة بدون ما يتشوه الفيديو */
+    pointer-events: none; /* يمنع أي تفاعل مع الفيديو مباشرة */
+}
+
+/* طبقة التغشية (Overlay) */
+.hero-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* نرجع نستخدم التغشية الخفيفة ليظل الكلام واضح */
+    background: linear-gradient(135deg, rgba(11, 15, 25, 0.45) 0%, rgba(20, 27, 77, 0.35) 100%);
+    z-index: 2; /* فوق الفيديو */
+}
+
+/* المحتوى (النصوص والأزرار) */
+.hero-content-container {
+    position: relative;
+    z-index: 3; /* أعلى طبقة */
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
 
 
 /* ============================================= */
